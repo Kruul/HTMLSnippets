@@ -1,0 +1,118 @@
+<style>
+body {
+  padding-top: 50px;
+}
+legend a {
+  color: inherit;
+}
+legend.legendStyle {
+padding-left: 5px;
+padding-right: 5px;
+}
+fieldset.fsStyle {
+font-family: Verdana, Arial, sans-serif;
+font-size: small;
+font-weight: normal;
+border: 1px solid #999999;
+padding: 4px;
+margin: 5px;
+}
+legend.legendStyle {
+font-size: 90%;
+color: #888888;
+background-color: transparent;
+font-weight: bold;
+}
+
+legend {
+width: auto;
+border-bottom: 0px;
+}
+
+.dropdown-menu {width: 100%;
+position: fixed;
+top: 50px;
+left: 0;
+z-index: 1000;
+display: none;
+float: left;
+min-width: 160px;
+padding: 5px 0;
+margin: 0 auto;
+
+text-align:left;
+}
+
+.dropdown-menu li {display:inline-block;}
+
+.dropdown-menu li.dropdown .dropdown-menu {top:210px;}
+
+
+.dropdown-menu li.dropdown {background:url(http://decombh.org/img/nav_down.png) no-repeat bottom right !important;
+background-position: 5px 9px !important;
+}
+</style>
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <!-- having the href link here doesn't seem to do anything -->
+          <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">Home <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="dLabel2" role="button" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">menu item 1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">menu item 2</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">menu item 3</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="container">
+
+  
+
+<!-- fieldset collapse start -->
+<div class="cold-md-12">
+		<fieldset class="fsStyle">
+			
+				
+				
+					<legend class="legendStyle">
+                      <a data-toggle="collapse" data-target="#demo" href="#">Activity Log Filter Criteria</a>
+					</legend>
+					<div class="row collapse in" id="demo">
+							<div class="col-md-2">
+								<label for="activity_from_date" class="labelStyle">Activity From Date:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="fromDate" maxlength="10" size="11" tabindex="59" value="" onblur="javascript:DateFormat(this,event,true);" class="textInput" id="activity_from_date" type="text">
+							</div>
+          </div>
+  </fieldset>
+</div>
+  </div><!-- /.container -->
